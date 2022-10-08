@@ -12,12 +12,12 @@
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+- **Category:** Social/Education
+- **Mobile:** Mainly a mobile app although could be viable on a computer.
+- **Story:** Provides a way to connect students to different clubs in their university.
+- **Market:** College Students
+- **Habit:** This app can be used as often as people want and/or need to in order to find desired clubs.
+- **Scope:** Starting out we will show different clubs and their information and allow for a chat option for people in the club.
 
 ## Product Spec
 
