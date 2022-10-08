@@ -8,7 +8,7 @@
 
 ## Overview
 ### Description
-[Description of your app]
+An app where users can view and join different clubs/organizations that their university offers. Makes joinning and chatting with the club members very simple.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
@@ -25,39 +25,44 @@
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* User logs in to access their clubs, chats, and preference settings
+* User can browse throug explore page to find clubs
+* Each club has a home page
+* User can make a club
+* User can browse through a homepage with all of their clubs
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* Ability to edit clubs
+* Ability to edit and delete messages in club chats
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Login
+* Register
+   * When closing the application, app remembers if user is logged in
+* Home screen
+   * A view of the clubs that the account logged in is part of
+* Explore Screen
+   * A view of the clubs that the user is not a part of
+* Club Screen
+   * A screen with the clubs picture, name, description, and chat
+* Profile Screen
+   * A screen where users can view and update their profile
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Home
+* Explore
+* Profile
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Forced Log-in -> Account creation if no log in is available
+* Home screen -> club screen
+* Explore screen -> club screen
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
