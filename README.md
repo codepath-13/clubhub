@@ -75,9 +75,7 @@ An app where users can view and join different clubs/organizations that their un
 [This section will be completed in Unit 9]
 ### Models
 [Add table of models]
-Club
-|Property|Type|Description|
-|clubID|
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
