@@ -83,15 +83,28 @@ Club
 |image|file|Image that displays on club pages|
 |description|String|Description of club activites|
 |School|String|Name of the school this club operates at|
+|email|String|Club email|
 
 USER
 
 |Property|Type|Description|
 |--------|----|-----------|
 |UserID|String|Unique ID for each User|
+|password|String|Password for user|
 |profileImage|file|User's profile picture|
 |Bio|String|User's short description about themselves|
 |School|String|Name of the school this student attends|
+
+ UserClubs
+
+|Property|Type|Description|
+|--------|----|-----------|
+|UserID|String|Unique ID for each User|
+|ClubID|String|Unique ID for the Club|
+|StartDate|Datetime|Date when user joined the club|
+|EndDate|Datetime|Date of when user unsubscribe from the club|
+|IsOwner|Boolean|True/False user is a moderator/administrator|
+
 
 ### Networking
 
