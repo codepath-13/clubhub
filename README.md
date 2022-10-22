@@ -74,7 +74,7 @@ An app where users can view and join different clubs/organizations that their un
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+
 Club
 
 |Property|Type|Description|
@@ -84,6 +84,14 @@ Club
 |description|String|Description of club activites|
 |School|String|Name of the school this club operates at|
 
+USER
+
+|Property|Type|Description|
+|--------|----|-----------|
+|UserID|String|Unique ID for each User|
+|profileImage|file|User's profile picture|
+|Bio|String|User's short description about themselves|
+|School|String|Name of the school this student attends|
 
 ### Networking
 - [Add list of network requests by screen ]
