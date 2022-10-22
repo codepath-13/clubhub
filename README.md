@@ -94,7 +94,6 @@ USER
 |School|String|Name of the school this student attends|
 
 ### Networking
-- [Add list of network requests by screen ]
 
 * Home Screen
   * (Read/GET) Query all joined clubs
