@@ -75,6 +75,15 @@ An app where users can view and join different clubs/organizations that their un
 [This section will be completed in Unit 9]
 ### Models
 [Add table of models]
+Club
+
+|Property|Type|Description|
+|--------|----|-----------|
+|ClubID|String|Unique ID for the Club|
+|image|file|Image that displays on club pages|
+|description|String|Description of club activites|
+|School|String|Name of the school this club operates at|
+
 
 ### Networking
 - [Add list of network requests by screen ]
