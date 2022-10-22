@@ -95,5 +95,8 @@ USER
 
 ### Networking
 - [Add list of network requests by screen ]
+
+* Home Screen
+*   test
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
