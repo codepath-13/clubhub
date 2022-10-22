@@ -97,6 +97,10 @@ USER
 - [Add list of network requests by screen ]
 
 * Home Screen
-  *test2   
+  * (Read/GET) Query all joined clubs
+* Explore Screen
+  * (Read/GET) Query all available clubs at the given school
+* Profile Screen
+  * (Read/GET) Query logged in user object
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
