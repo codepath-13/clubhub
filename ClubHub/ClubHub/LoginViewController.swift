@@ -28,6 +28,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onLogIn(_ sender: Any) {
+        self.performSegue(withIdentifier: "loginSegue", sender: nil)
     }
     
     @IBAction func onSignUp(_ sender: Any) {
