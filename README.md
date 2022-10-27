@@ -89,7 +89,7 @@ USER
 
 |Property|Type|Description|
 |--------|----|-----------|
-|UserID|String|Unique ID for each User|
+|username|String|Unique ID for each User|
 |password|String|Password for user|
 |profileImage|file|User's profile picture|
 |Bio|String|User's short description about themselves|
@@ -99,7 +99,7 @@ USER
 
 |Property|Type|Description|
 |--------|----|-----------|
-|UserID|String|Unique ID for each User|
+|username|String|Unique ID for each User|
 |ClubID|String|Unique ID for the Club|
 |StartDate|Datetime|Date when user joined the club|
 |EndDate|Datetime|Date of when user unsubscribe from the club|
