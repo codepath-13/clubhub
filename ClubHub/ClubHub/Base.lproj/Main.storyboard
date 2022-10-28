@@ -316,7 +316,7 @@
                                             <outlet property="clubNameLabel" destination="Y0j-x8-H2g" id="Fnq-UB-fCs"/>
                                             <outlet property="descriptionLabel" destination="KeB-7l-F2o" id="pok-JD-bQi"/>
                                             <outlet property="photoView" destination="zGU-sX-qk8" id="MKy-O8-6ZH"/>
-                                            <segue destination="ZCo-Tm-W3Y" kind="show" id="Di4-xj-ZV6"/>
+                                            <segue destination="ZCo-Tm-W3Y" kind="show" identifier="detailSegue" id="Di4-xj-ZV6"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -378,14 +378,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="OYW-4Y-2r9">
-                                <rect key="frame" x="13" y="60" width="361" height="258"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="syT-rd-kdW" appends="YES" id="qwJ-Qy-YJe"/>
-                                </connections>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j6t-GL-cu1">
                                 <rect key="frame" x="125" y="366" width="249" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -454,6 +446,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="insta_camera_btn" translatesAutoresizingMaskIntoConstraints="NO" id="OYW-4Y-2r9">
+                                <rect key="frame" x="28" y="85" width="344" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="syT-rd-kdW" appends="YES" id="qwJ-Qy-YJe"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UKf-qH-sdV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -472,7 +472,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-149" y="2450"/>
+            <point key="canvasLocation" x="-149.23076923076923" y="2449.7630331753553"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -480,6 +480,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="image_placeholder" width="375" height="375"/>
+        <image name="insta_camera_btn" width="25" height="25"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
