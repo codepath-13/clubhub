@@ -7,7 +7,7 @@
 
 import UIKit
 import Parse
-
+import AlamofireImage
 class DetailClubViewController: UIViewController {
     
     var club: PFObject!

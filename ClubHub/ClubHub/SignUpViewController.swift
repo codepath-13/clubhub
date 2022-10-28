@@ -1,25 +1,23 @@
 //
-//  LoginViewController.swift
+//  SignUpViewController.swift
 //  ClubHub
 //
-//  Created by Salem Nassar on 10/26/22.
+//  Created by Salem Nassar on 10/27/22.
 //
 
 import UIKit
 import Parse
+class SignUpViewController: UIViewController {
 
-class LoginViewController: UIViewController {
-
-    @IBOutlet weak var schoolField: UITextField!
-    @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var schoolField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
-
         // Do any additional setup after loading the view.
     }
     
@@ -27,26 +25,25 @@ class LoginViewController: UIViewController {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
     }
+
     
-    @IBAction func onLogIn(_ sender: Any) {
-        let username = usernameField.text!
-        let password = passwordField.text!
+    @IBAction func onCreateAccount(_ sender: Any) {
+        let user = PFUser()
+        user.username = usernameField.text
+        user.password = passwordField.text
+        user["school"] = schoolField.text
         
-        PFUser.logInWithUsername(inBackground: username, password: password){
-            (user, error) in
-            if user != nil{
+        user.signUpInBackground{(success, error) in
+            if success{
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
-            }else{
+            }
+            else{
                 print("Error: \(error?.localizedDescription)")
             }
+            
         }
 
     }
-    
-    @IBAction func onSignUp(_ sender: Any) {
-        self.performSegue(withIdentifier: "signInSegue", sender: nil)
-    }
-    
     
     
     /*

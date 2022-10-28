@@ -23,6 +23,7 @@
 		FC7FBDB4290980B8006070B9 /* ClubHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7FBDB3290980B8006070B9 /* ClubHubUITests.swift */; };
 		FC7FBDB6290980B8006070B9 /* ClubHubUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7FBDB5290980B8006070B9 /* ClubHubUITestsLaunchTests.swift */; };
 		FC7FBDC32909EFEB006070B9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7FBDC22909EFEB006070B9 /* LoginViewController.swift */; };
+		FC7FBDC5290B44C2006070B9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7FBDC4290B44C2006070B9 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		FC7FBDB3290980B8006070B9 /* ClubHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubHubUITests.swift; sourceTree = "<group>"; };
 		FC7FBDB5290980B8006070B9 /* ClubHubUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubHubUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FC7FBDC22909EFEB006070B9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FC7FBDC4290B44C2006070B9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FD77588F8EC74DE93CA359B8 /* Pods-ClubHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClubHub.release.xcconfig"; path = "Target Support Files/Pods-ClubHub/Pods-ClubHub.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,6 +160,7 @@
 				FC7FBDA0290980B8006070B9 /* Info.plist */,
 				FC7FBDC22909EFEB006070B9 /* LoginViewController.swift */,
 				2869F1D1290AFC00009B6240 /* DetailClubViewController.swift */,
+				FC7FBDC4290B44C2006070B9 /* SignUpViewController.swift */,
 			);
 			path = ClubHub;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 			files = (
 				2869F1D0290ADCF4009B6240 /* AddClubViewController.swift in Sources */,
 				2869F1CC290AD73B009B6240 /* ExploreViewController.swift in Sources */,
+				FC7FBDC5290B44C2006070B9 /* SignUpViewController.swift in Sources */,
 				FC7FBDC32909EFEB006070B9 /* LoginViewController.swift in Sources */,
 				2869F1CE290AD82D009B6240 /* ClubCell.swift in Sources */,
 				FC7FBD93290980B6006070B9 /* AppDelegate.swift in Sources */,
