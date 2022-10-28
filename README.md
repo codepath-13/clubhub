@@ -5,6 +5,7 @@
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
 2. [Schema](#Schema)
+3. [Video Walkthrough](#Video-Walkthrough)
 
 ## Overview
 ### Description
@@ -116,3 +117,9 @@ USER
   * (Read/GET) Query logged in user object
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+### Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='http://g.recordit.co/vaucCqahZw.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
