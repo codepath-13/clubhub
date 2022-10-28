@@ -26,3 +26,4 @@ class ClubCell: UITableViewCell {
     }
 
 }
+
