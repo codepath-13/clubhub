@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WJv-91-qaI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -75,7 +75,7 @@
                     <connections>
                         <outlet property="passwordField" destination="fii-Yx-S45" id="UxG-Vl-845"/>
                         <outlet property="usernameField" destination="wwJ-Qz-B3w" id="fvy-Vv-q2X"/>
-                        <segue destination="WJv-91-qaI" kind="custom" id="3cm-g9-NPu"/>
+                        <segue destination="WJv-91-qaI" kind="presentation" identifier="loginSegue" id="3cm-g9-NPu"/>
                         <segue destination="YLD-HG-hd1" kind="presentation" identifier="signInSegue" id="8Gw-lR-Fq8"/>
                     </connections>
                 </viewController>
@@ -127,26 +127,27 @@
                         <constraints>
                             <constraint firstItem="uhD-v6-Uba" firstAttribute="trailing" secondItem="TzB-Rv-6Ex" secondAttribute="trailing" constant="115" id="2zS-Ww-wlz"/>
                             <constraint firstItem="uhD-v6-Uba" firstAttribute="trailing" secondItem="zW9-qK-V0L" secondAttribute="trailing" constant="115" id="3AP-RW-lPw"/>
-                            <constraint firstItem="J1A-N8-uBs" firstAttribute="top" secondItem="uhD-v6-Uba" secondAttribute="top" id="3DS-s8-yVj"/>
                             <constraint firstItem="TzB-Rv-6Ex" firstAttribute="top" secondItem="AW1-9e-kyl" secondAttribute="bottom" constant="50" id="5N2-R9-WVQ"/>
                             <constraint firstItem="AW1-9e-kyl" firstAttribute="leading" secondItem="uhD-v6-Uba" secondAttribute="leading" constant="115" id="8cY-S2-4xL"/>
                             <constraint firstItem="uhD-v6-Uba" firstAttribute="trailing" secondItem="hcW-Bq-ztS" secondAttribute="trailing" constant="115" id="8ot-ls-hEa"/>
+                            <constraint firstItem="uhD-v6-Uba" firstAttribute="trailing" secondItem="J1A-N8-uBs" secondAttribute="trailing" constant="115" id="FJk-jB-nQ6"/>
                             <constraint firstItem="uhD-v6-Uba" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="TzB-Rv-6Ex" secondAttribute="bottom" constant="226" id="GVD-rg-fWE"/>
                             <constraint firstItem="TzB-Rv-6Ex" firstAttribute="leading" secondItem="uhD-v6-Uba" secondAttribute="leading" constant="115" id="Gm2-OR-2D0"/>
                             <constraint firstItem="AW1-9e-kyl" firstAttribute="top" secondItem="hcW-Bq-ztS" secondAttribute="bottom" constant="50" id="Jvk-JU-eyp"/>
                             <constraint firstItem="uhD-v6-Uba" firstAttribute="trailing" secondItem="AW1-9e-kyl" secondAttribute="trailing" constant="115" id="TU0-mz-oQd"/>
-                            <constraint firstItem="uhD-v6-Uba" firstAttribute="trailing" secondItem="J1A-N8-uBs" secondAttribute="trailing" constant="115" id="gpE-Jt-57N"/>
+                            <constraint firstItem="J1A-N8-uBs" firstAttribute="leading" secondItem="uhD-v6-Uba" secondAttribute="leading" constant="115" id="ZVH-XQ-Mvw"/>
+                            <constraint firstItem="zW9-qK-V0L" firstAttribute="top" secondItem="J1A-N8-uBs" secondAttribute="bottom" constant="115" id="iXj-vy-4vo"/>
+                            <constraint firstItem="J1A-N8-uBs" firstAttribute="top" secondItem="uhD-v6-Uba" secondAttribute="top" id="nQY-tJ-oEW"/>
                             <constraint firstItem="hcW-Bq-ztS" firstAttribute="leading" secondItem="uhD-v6-Uba" secondAttribute="leading" constant="115" id="oJX-CI-I0H"/>
-                            <constraint firstItem="zW9-qK-V0L" firstAttribute="top" secondItem="J1A-N8-uBs" secondAttribute="bottom" constant="115" id="pmt-hw-7DX"/>
-                            <constraint firstItem="J1A-N8-uBs" firstAttribute="leading" secondItem="uhD-v6-Uba" secondAttribute="leading" constant="115" id="rtg-WA-WDD"/>
                             <constraint firstItem="zW9-qK-V0L" firstAttribute="leading" secondItem="uhD-v6-Uba" secondAttribute="leading" constant="115" id="sat-0g-gc0"/>
                             <constraint firstItem="hcW-Bq-ztS" firstAttribute="top" secondItem="zW9-qK-V0L" secondAttribute="bottom" constant="50" id="zew-2y-TsU"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="passwordField" destination="AW1-9e-kyl" id="Pso-Fa-9dc"/>
                         <outlet property="schoolField" destination="zW9-qK-V0L" id="yIi-ge-71U"/>
                         <outlet property="usernameField" destination="hcW-Bq-ztS" id="rBk-dk-bfb"/>
-                        <segue destination="WJv-91-qaI" kind="custom" id="Kg1-9I-D2F"/>
+                        <segue destination="WJv-91-qaI" kind="presentation" identifier="createAccountSegue" id="Kg1-9I-D2F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HdR-OG-paW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -158,7 +159,7 @@
             <objects>
                 <viewController id="SyZ-5F-32U" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K8a-gD-e4l">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="7od-25-xZt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -174,7 +175,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="ZCo-Tm-W3Y" customClass="DetailClubViewController" customModule="ClubHub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cL8-uO-qhS">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="q1B-V1-rI4">
@@ -239,7 +240,7 @@
                 <navigationController id="TAa-1Z-EPV" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Explore clubs" id="vAR-yW-s1i"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="e9p-Wl-QDr">
-                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -255,7 +256,7 @@
             <objects>
                 <viewController id="X18-gh-aYC" customClass="ExploreViewController" customModule="ClubHub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5zO-nO-Y3E">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="UJz-ZW-tf6">
@@ -339,6 +340,7 @@
         <scene sceneID="mlm-6n-ffI">
             <objects>
                 <tabBarController id="WJv-91-qaI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hTM-NI-ZLa"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yQy-KI-a3A">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -359,7 +361,7 @@
             <objects>
                 <viewController id="Hrw-u9-29R" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yxw-7W-Ew5">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="UES-CV-Jj0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -476,7 +478,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3cm-g9-NPu"/>
+        <segue reference="Kg1-9I-D2F"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="image_placeholder" width="375" height="375"/>
