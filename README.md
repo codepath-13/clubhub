@@ -29,7 +29,7 @@ An app where users can view and join different clubs/organizations that their un
 - [x] User can browse throug explore page to find clubs
 - [x] Each club has a home page
 - [x] User can make a club
-- [ ] User can access their chats and preference settings
+- [ ] User can access their preference settings
 - [ ] User can browse through a homepage with all of their clubs
 
 **Optional Nice-to-have Stories**
