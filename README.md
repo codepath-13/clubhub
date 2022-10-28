@@ -25,16 +25,16 @@ An app where users can view and join different clubs/organizations that their un
 
 **Required Must-have Stories**
 
-[x] User logs in to access their clubs
-[x] User can browse throug explore page to find clubs
-[x] Each club has a home page
-[x] User can make a club
-[ ] User can access their chats and preference settings
-[ ] User can browse through a homepage with all of their clubs
+- [x] User logs in to access their clubs
+- [x] User can browse throug explore page to find clubs
+- [x] Each club has a home page
+- [x] User can make a club
+- [ ] User can access their chats and preference settings
+- [ ] User can browse through a homepage with all of their clubs
 
 **Optional Nice-to-have Stories**
--[ ] Ability to edit clubs
--[ ] Ability to edit and delete messages in club chats
+- [ ] Ability to edit clubs
+- [ ] Ability to edit and delete messages in club chats
 
 ### 2. Screen Archetypes
 
