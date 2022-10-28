@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2869F1CC290AD73B009B6240 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2869F1CB290AD73B009B6240 /* ExploreViewController.swift */; };
-		2869F1CE290AD82D009B6240 /* ClubCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2869F1CD290AD82D009B6240 /* ClubCell.swift */; };
-		2869F1D0290ADCF4009B6240 /* AddClubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2869F1CF290ADCF4009B6240 /* AddClubViewController.swift */; };
+		281EB9BA290B5CD500AF7CB4 /* AddClubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281EB9B9290B5CD500AF7CB4 /* AddClubViewController.swift */; };
+		281EB9BC290B5CE600AF7CB4 /* ClubCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281EB9BB290B5CE600AF7CB4 /* ClubCell.swift */; };
+		281EB9BE290B5CF300AF7CB4 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281EB9BD290B5CF300AF7CB4 /* ExploreViewController.swift */; };
 		2869F1D2290AFC00009B6240 /* DetailClubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2869F1D1290AFC00009B6240 /* DetailClubViewController.swift */; };
 		565788BEE9D44A32F3B0CB4E /* Pods_ClubHub_ClubHubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA2230759940521B720E9722 /* Pods_ClubHub_ClubHubUITests.framework */; };
 		90EF7E94FC6D2AE987C7CE81 /* Pods_ClubHubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2B0F4508CFAA9AE161EB98 /* Pods_ClubHubTests.framework */; };
@@ -44,9 +44,9 @@
 
 /* Begin PBXFileReference section */
 		1B2B0F4508CFAA9AE161EB98 /* Pods_ClubHubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClubHubTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2869F1CB290AD73B009B6240 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExploreViewController.swift; path = ../../../Respaldo/ClubHub1/ClubHub/ClubHub/ExploreViewController.swift; sourceTree = "<group>"; };
-		2869F1CD290AD82D009B6240 /* ClubCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClubCell.swift; path = ../../../Respaldo/ClubHub1/ClubHub/ClubHub/ClubCell.swift; sourceTree = "<group>"; };
-		2869F1CF290ADCF4009B6240 /* AddClubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddClubViewController.swift; path = ../../../Respaldo/ClubHub1/ClubHub/ClubHub/AddClubViewController.swift; sourceTree = "<group>"; };
+		281EB9B9290B5CD500AF7CB4 /* AddClubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddClubViewController.swift; path = ../../../../../ClubHub1/ClubHub/ClubHub/AddClubViewController.swift; sourceTree = "<group>"; };
+		281EB9BB290B5CE600AF7CB4 /* ClubCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClubCell.swift; path = ../../../../../ClubHub1/ClubHub/ClubHub/ClubCell.swift; sourceTree = "<group>"; };
+		281EB9BD290B5CF300AF7CB4 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExploreViewController.swift; path = ../../../../../ClubHub1/ClubHub/ClubHub/ExploreViewController.swift; sourceTree = "<group>"; };
 		2869F1D1290AFC00009B6240 /* DetailClubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailClubViewController.swift; sourceTree = "<group>"; };
 		2D9B21D240D7CEF2A00A43CA /* Pods-ClubHubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClubHubTests.debug.xcconfig"; path = "Target Support Files/Pods-ClubHubTests/Pods-ClubHubTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C8C34F17702D618BD155ED9 /* Pods-ClubHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClubHub.debug.xcconfig"; path = "Target Support Files/Pods-ClubHub/Pods-ClubHub.debug.xcconfig"; sourceTree = "<group>"; };
@@ -147,9 +147,9 @@
 		FC7FBD91290980B6006070B9 /* ClubHub */ = {
 			isa = PBXGroup;
 			children = (
-				2869F1CF290ADCF4009B6240 /* AddClubViewController.swift */,
-				2869F1CD290AD82D009B6240 /* ClubCell.swift */,
-				2869F1CB290AD73B009B6240 /* ExploreViewController.swift */,
+				281EB9B9290B5CD500AF7CB4 /* AddClubViewController.swift */,
+				281EB9BD290B5CF300AF7CB4 /* ExploreViewController.swift */,
+				281EB9BB290B5CE600AF7CB4 /* ClubCell.swift */,
 				FC7FBD92290980B6006070B9 /* AppDelegate.swift */,
 				FC7FBD94290980B6006070B9 /* SceneDelegate.swift */,
 				FC7FBD98290980B6006070B9 /* Main.storyboard */,
@@ -418,13 +418,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2869F1D0290ADCF4009B6240 /* AddClubViewController.swift in Sources */,
-				2869F1CC290AD73B009B6240 /* ExploreViewController.swift in Sources */,
 				FC7FBDC32909EFEB006070B9 /* LoginViewController.swift in Sources */,
-				2869F1CE290AD82D009B6240 /* ClubCell.swift in Sources */,
+				281EB9BA290B5CD500AF7CB4 /* AddClubViewController.swift in Sources */,
 				FC7FBD93290980B6006070B9 /* AppDelegate.swift in Sources */,
+				281EB9BE290B5CF300AF7CB4 /* ExploreViewController.swift in Sources */,
 				2869F1D2290AFC00009B6240 /* DetailClubViewController.swift in Sources */,
 				FC7FBD95290980B6006070B9 /* SceneDelegate.swift in Sources */,
+				281EB9BC290B5CE600AF7CB4 /* ClubCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
