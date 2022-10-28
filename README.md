@@ -25,11 +25,12 @@ An app where users can view and join different clubs/organizations that their un
 
 **Required Must-have Stories**
 
--[ ] User logs in to access their clubs, chats, and preference settings
--[ ] User can browse throug explore page to find clubs
--[ ] Each club has a home page
--[ ] User can make a club
--[ ] User can browse through a homepage with all of their clubs
+[x] User logs in to access their clubs
+[x] User can browse throug explore page to find clubs
+[x] Each club has a home page
+[x] User can make a club
+[ ] User can access their chats and preference settings
+[ ] User can browse through a homepage with all of their clubs
 
 **Optional Nice-to-have Stories**
 -[ ] Ability to edit clubs
