@@ -66,7 +66,7 @@ An app where users can view and join different clubs/organizations that their un
 * Explore screen -> club screen
 
 ## Wireframes
-<img src="https://github.com/codepath-13/clubhub/blob/main/ClubHub%20Wireframes.pdf" width=600>
+<img src="https://github.com/codepath-13/clubhub/blob/main/ClubHub%20Wireframes%20(Updated).jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
