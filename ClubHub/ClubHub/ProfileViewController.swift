@@ -52,7 +52,7 @@ class ProfileViewController: UIViewController,UIImagePickerControllerDelegate, U
         if((FirstNameTextField.text == "") || (lastNameTextField.text == "")){
             
             // Create new Alert
-            var dialogMessage = UIAlertController(title: "Confirm", message: "Fields cannot be empty", preferredStyle: .alert)
+            let dialogMessage = UIAlertController(title: "Confirm", message: "Fields cannot be empty", preferredStyle: .alert)
             
             // Create OK button with action handler
             let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
@@ -63,7 +63,7 @@ class ProfileViewController: UIViewController,UIImagePickerControllerDelegate, U
             dialogMessage.addAction(ok)
             // Present Alert to
             self.present(dialogMessage, animated: true, completion: nil)
-        }
+        } else {
         
         //set new values
         let userName = FirstNameTextField.text
@@ -86,7 +86,7 @@ class ProfileViewController: UIViewController,UIImagePickerControllerDelegate, U
         myUser.saveInBackground{(success, error) in
             if success {
                 // Create new Alert
-                var dialogMessage = UIAlertController(title: "Success", message: "Profile successfully updated", preferredStyle: .alert)
+                let dialogMessage = UIAlertController(title: "Success", message: "Profile successfully updated", preferredStyle: .alert)
                 // Create OK button with action handler
                 let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
                     print("Ok button tapped")
@@ -100,6 +100,7 @@ class ProfileViewController: UIViewController,UIImagePickerControllerDelegate, U
             } else {
                 print("error!")
             }
+        }
         }
         
     }
