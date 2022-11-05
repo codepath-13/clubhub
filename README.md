@@ -122,7 +122,7 @@ USER
 
 Here's a walkthrough of Week 2 implemented user stories:
 
-<img src='http://g.recordit.co/RLKXVhIYMC.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='week2.mp4' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 Here's a walkthrough of implemented user stories:
 
