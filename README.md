@@ -30,7 +30,7 @@ An app where users can view and join different clubs/organizations that their un
 - [x] User can browse throug explore page to find clubs
 - [x] Each club has a home page
 - [x] User can make a club
-- [ ] User can access their preference settings
+- [x] User can access their preference settings
 - [ ] User can browse through a homepage with all of their clubs
 
 **Optional Nice-to-have Stories**
@@ -119,6 +119,10 @@ USER
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
 
 ### Video Walkthrough
+
+Here's a walkthrough of Week 2 implemented user stories:
+
+<img src='http://g.recordit.co/2FQY3Nf8LE.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 Here's a walkthrough of implemented user stories:
 
