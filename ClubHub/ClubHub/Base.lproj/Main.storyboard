@@ -153,7 +153,7 @@
             </objects>
             <point key="canvasLocation" x="1920" y="-708"/>
         </scene>
-        <!--Item 2-->
+        <!--Home-->
         <scene sceneID="8T6-kY-cf9">
             <objects>
                 <viewController id="SyZ-5F-32U" sceneMemberID="viewController">
@@ -163,7 +163,7 @@
                         <viewLayoutGuide key="safeArea" id="7od-25-xZt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="ZpA-D4-oHC"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="ZpA-D4-oHC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CMQ-oB-VAZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -237,7 +237,7 @@
         <scene sceneID="JvK-1v-cwj">
             <objects>
                 <navigationController modalPresentationStyle="fullScreen" id="TAa-1Z-EPV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Explore clubs" id="vAR-yW-s1i"/>
+                    <tabBarItem key="tabBarItem" title="Explore clubs" image="studentdesk" catalog="system" id="vAR-yW-s1i"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="e9p-Wl-QDr">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -432,7 +432,7 @@
                         <viewLayoutGuide key="safeArea" id="UES-CV-Jj0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" selectedImage="profile_tab" id="Mig-Ue-Gw4"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="Mig-Ue-Gw4"/>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -560,8 +560,10 @@
         <segue reference="Kg1-9I-D2F"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="house" catalog="system" width="128" height="106"/>
         <image name="image_placeholder" width="375" height="375"/>
-        <image name="profile_tab" width="25" height="25"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="studentdesk" catalog="system" width="124" height="128"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
