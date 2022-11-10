@@ -11,7 +11,7 @@ import AlamofireImage
 class DetailClubViewController: UIViewController {
     
     var club: PFObject!
-
+    
     @IBOutlet weak var logoView: UIImageView!
     @IBOutlet weak var clubNameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -35,7 +35,28 @@ class DetailClubViewController: UIViewController {
      
     }
     
+    @IBAction func onJoinCLub(_ sender: Any) {
+        club.add(PFUser.current()!, forKey: "members")     // adding User to the list of members
+        PFUser.current()!.add(club!, forKey: "clubs")      // adding club to the list of clubs the user has joined
 
+        club.saveInBackground(){(success, error) in // save club object
+            if(success){
+                print("Member added to list.")
+            }else{
+                print("Error adding member.")
+            }
+        }
+        
+        PFUser.current()!.saveInBackground(){(success: Bool, error: Error?) in // save user object
+            if success{
+                print("Club added to users clubs.")
+            }else{
+                print("Error adding club.")
+            }
+        }
+        
+    }
+    
     /*
     // MARK: - Navigation
 

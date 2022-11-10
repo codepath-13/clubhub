@@ -16,6 +16,7 @@ class ExploreViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     var clubs = [PFObject]()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
