@@ -31,11 +31,8 @@ An app where users can view and join different clubs/organizations that their un
 - [x] Each club has a home page
 - [x] User can make a club
 - [x] User can access their preference settings
-- [ ] User can browse through a homepage with all of their clubs
+- [x] User can browse through a homepage with all of their clubs
 
-**Optional Nice-to-have Stories**
-- [ ] Ability to edit clubs
-- [ ] Ability to edit and delete messages in club chats
 
 ### 2. Screen Archetypes
 
@@ -85,6 +82,7 @@ Club
 |description|String|Description of club activites|
 |School|String|Name of the school this club operates at|
 |email|String|Club email|
+|memebers|Array|An array with the clubs members|
 
 USER
 
@@ -95,16 +93,8 @@ USER
 |profileImage|file|User's profile picture|
 |Bio|String|User's short description about themselves|
 |School|String|Name of the school this student attends|
+|clubs|Array|An array with the users joined clubs|
 
- UserClubs
-
-|Property|Type|Description|
-|--------|----|-----------|
-|username|String|Unique ID for each User|
-|ClubID|String|Unique ID for the Club|
-|StartDate|Datetime|Date when user joined the club|
-|EndDate|Datetime|Date of when user unsubscribe from the club|
-|IsOwner|Boolean|True/False user is a moderator/administrator|
 
 
 ### Networking
@@ -116,7 +106,7 @@ USER
 * Profile Screen
   * (Read/GET) Query logged in user object
 - [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+
 
 ### Video Walkthrough
 
