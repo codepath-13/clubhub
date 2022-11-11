@@ -262,7 +262,7 @@
                         <outlet property="clubDescriptionLabel" destination="BkK-fl-Iof" id="kQB-VB-BY1"/>
                         <outlet property="clubEmailLabel" destination="L8d-By-uay" id="dyU-Da-GfG"/>
                         <outlet property="clubImage" destination="By8-PD-sb0" id="dj2-F7-7Bl"/>
-                        <outlet property="clubNameLabel" destination="BkK-fl-Iof" id="Sa3-Nl-omt"/>
+                        <outlet property="clubNameLabel" destination="iZZ-Ag-opF" id="bXZ-xJ-iKY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HNu-iH-RnG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

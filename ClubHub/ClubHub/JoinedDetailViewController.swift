@@ -11,9 +11,9 @@ import AlamofireImage
 class JoinedDetailViewController: UIViewController {
     var club: PFObject!
 
+    @IBOutlet weak var clubNameLabel: UILabel!
     @IBOutlet weak var clubEmailLabel: UILabel!
     @IBOutlet weak var clubDescriptionLabel: UILabel!
-    @IBOutlet weak var clubNameLabel: UILabel!
     @IBOutlet weak var clubImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
