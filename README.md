@@ -106,6 +106,11 @@ USER
 
 ### Video Walkthrough
 
+Here's a walkthrough of implemented user stories of Week 3:
+
+<img src='http://g.recordit.co/TyIt0sb8fi.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+
 Here's a walkthrough of Week 2 implemented user stories:
 
 <img src='/clubHub.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
