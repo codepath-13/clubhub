@@ -12,7 +12,6 @@
 An app where users can view and join different clubs/organizations that their university offers. Makes joinning clubs very simple.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 - **Category:** Social/Education
 - **Mobile:** Mainly a mobile app although could be viable on a computer.
 - **Story:** Provides a way to connect students to different clubs in their university.
@@ -65,12 +64,9 @@ An app where users can view and join different clubs/organizations that their un
 ## Wireframes
 <img src="https://github.com/codepath-13/clubhub/blob/main/ClubHub%20Wireframes%20(Updated).jpg" width=600>
 
-### [BONUS] Digital Wireframes & Mockups
-
-### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
+
 ### Models
 
 Club
@@ -105,7 +101,7 @@ USER
   * (Read/GET) Query all available clubs at the given school
 * Profile Screen
   * (Read/GET) Query logged in user object
-- [Create basic snippets for each Parse network request]
+
 
 
 ### Video Walkthrough
