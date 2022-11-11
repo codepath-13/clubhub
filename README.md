@@ -9,7 +9,7 @@
 
 ## Overview
 ### Description
-An app where users can view and join different clubs/organizations that their university offers. Makes joinning and chatting with the club members very simple.
+An app where users can view and join different clubs/organizations that their university offers. Makes joinning clubs very simple.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
