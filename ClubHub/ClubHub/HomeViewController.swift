@@ -61,7 +61,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "JoinedClubCell", for: indexPath) as! JoinedClubCell
-        let currClub = joinedClubs[indexPath.row]
+        let currClub = joinedClubs[indexPath.item]
         let imageFile = currClub["image"] as! PFFileObject
         let urlString = imageFile.url!
         let url = URL(string:urlString)!
@@ -81,7 +81,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         if segue.identifier == "joinedDetailSegue" {
             let cell = sender as! UICollectionViewCell
             let indexPath = collectionView.indexPath(for: cell)!
-            let club = joinedClubs[indexPath.row]
+            let club = joinedClubs[indexPath.item]
             
             let joinedDetailViewController = segue.destination as! JoinedDetailViewController
             

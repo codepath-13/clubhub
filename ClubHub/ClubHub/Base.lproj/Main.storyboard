@@ -195,6 +195,7 @@
                                         <size key="customSize" width="174" height="205"/>
                                         <connections>
                                             <outlet property="joinedClubImage" destination="cq2-OK-Ai4" id="3Vf-3V-aou"/>
+                                            <segue destination="rwm-ou-S92" kind="show" identifier="joinedDetailSegue" id="i8U-LB-Zno"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -206,7 +207,6 @@
                     <navigationItem key="navigationItem" id="whR-Fd-knQ"/>
                     <connections>
                         <outlet property="collectionView" destination="jPP-AT-vXL" id="oel-3C-IC0"/>
-                        <segue destination="rwm-ou-S92" kind="show" identifier="joinedDetailSegue" id="gJ4-xj-VyE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CMQ-oB-VAZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
