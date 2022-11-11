@@ -82,7 +82,7 @@ Club
 |description|String|Description of club activites|
 |School|String|Name of the school this club operates at|
 |email|String|Club email|
-|memebers|Array|An array with the clubs members|
+|members|Array|An array with the clubs members|
 
 USER
 
