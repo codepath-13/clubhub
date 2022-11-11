@@ -36,6 +36,7 @@ class DetailClubViewController: UIViewController {
     }
     
     @IBAction func onJoinCLub(_ sender: Any) {
+        
         club.add(PFUser.current()!, forKey: "members")     // adding User to the list of members
         PFUser.current()!.add(club!, forKey: "clubs")      // adding club to the list of clubs the user has joined
 
@@ -47,7 +48,7 @@ class DetailClubViewController: UIViewController {
             }
         }
         
-        PFUser.current()!.saveInBackground(){(success: Bool, error: Error?) in // save user object
+        PFUser.current()!.saveInBackground(){(success, error) in // save user object
             if success{
                 print("Club added to users clubs.")
             }else{

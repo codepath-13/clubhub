@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -154,21 +155,119 @@
             </objects>
             <point key="canvasLocation" x="1920" y="-708"/>
         </scene>
-        <!--Home-->
+        <!--Home View Controller-->
         <scene sceneID="8T6-kY-cf9">
             <objects>
-                <viewController id="SyZ-5F-32U" sceneMemberID="viewController">
+                <viewController id="SyZ-5F-32U" customClass="HomeViewController" customModule="ClubHub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K8a-gD-e4l">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jPP-AT-vXL">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ka0-Tn-2cE">
+                                    <size key="itemSize" width="174" height="205"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="JoinedClubCell" id="bIJ-rG-Tdr" customClass="JoinedClubCell" customModule="ClubHub" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="174" height="205"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LbS-sg-iOh">
+                                            <rect key="frame" x="0.0" y="0.0" width="174" height="205"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cq2-OK-Ai4">
+                                                    <rect key="frame" x="0.0" y="0.0" width="174" height="205"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="cq2-OK-Ai4" secondAttribute="trailing" id="2nx-95-IVh"/>
+                                                <constraint firstItem="cq2-OK-Ai4" firstAttribute="top" secondItem="LbS-sg-iOh" secondAttribute="top" id="QVO-pk-0Xl"/>
+                                                <constraint firstItem="cq2-OK-Ai4" firstAttribute="leading" secondItem="LbS-sg-iOh" secondAttribute="leading" id="drv-2l-Jzb"/>
+                                                <constraint firstAttribute="bottom" secondItem="cq2-OK-Ai4" secondAttribute="bottom" id="fg1-HO-7Xl"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="174" height="205"/>
+                                        <connections>
+                                            <outlet property="joinedClubImage" destination="cq2-OK-Ai4" id="3Vf-3V-aou"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="7od-25-xZt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="ZpA-D4-oHC"/>
+                    <navigationItem key="navigationItem" id="whR-Fd-knQ"/>
+                    <connections>
+                        <outlet property="collectionView" destination="jPP-AT-vXL" id="oel-3C-IC0"/>
+                        <segue destination="rwm-ou-S92" kind="show" identifier="joinedDetailSegue" id="gJ4-xj-VyE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CMQ-oB-VAZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1260" y="1000"/>
+            <point key="canvasLocation" x="1260" y="1705"/>
+        </scene>
+        <!--Joined Detail View Controller-->
+        <scene sceneID="NWn-hY-BQd">
+            <objects>
+                <viewController id="rwm-ou-S92" customClass="JoinedDetailViewController" customModule="ClubHub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Caw-kk-RGA">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="By8-PD-sb0">
+                                <rect key="frame" x="16" y="92" width="358" height="263"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Math Club" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZZ-Ag-opF">
+                                <rect key="frame" x="16" y="401" width="358" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkK-fl-Iof">
+                                <rect key="frame" x="16" y="478" width="358" height="182"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ek6-Cb-gdY">
+                                <rect key="frame" x="16" y="686" width="125" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="math.club@school.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8d-By-uay">
+                                <rect key="frame" x="16" y="739" width="358" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5ON-Fx-jFM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jc6-Eg-QiE"/>
+                    <connections>
+                        <outlet property="clubDescriptionLabel" destination="BkK-fl-Iof" id="kQB-VB-BY1"/>
+                        <outlet property="clubEmailLabel" destination="L8d-By-uay" id="dyU-Da-GfG"/>
+                        <outlet property="clubImage" destination="By8-PD-sb0" id="dj2-F7-7Bl"/>
+                        <outlet property="clubNameLabel" destination="BkK-fl-Iof" id="Sa3-Nl-omt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HNu-iH-RnG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1260" y="2450"/>
         </scene>
         <!--Detail Club View Controller-->
         <scene sceneID="q3v-58-7Hb">
@@ -235,7 +334,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EqG-V3-Sce" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="770.76923076923072" y="2449.7630331753553"/>
+            <point key="canvasLocation" x="237" y="2450"/>
         </scene>
         <!--Explore clubs-->
         <scene sceneID="JvK-1v-cwj">
@@ -357,7 +456,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="TAa-1Z-EPV" kind="relationship" relationship="viewControllers" id="SEh-iD-Xkq"/>
-                        <segue destination="SyZ-5F-32U" kind="relationship" relationship="viewControllers" id="72g-V9-gGk"/>
+                        <segue destination="9PL-V7-PAc" kind="relationship" relationship="viewControllers" id="72g-V9-gGk"/>
                         <segue destination="Hrw-u9-29R" kind="relationship" relationship="viewControllers" id="Kqt-vc-QhI"/>
                     </connections>
                 </tabBarController>
@@ -557,7 +656,26 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-149.23076923076923" y="2449.7630331753553"/>
+            <point key="canvasLocation" x="-483" y="2450"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="SKu-Jt-4MB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9PL-V7-PAc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="ZpA-D4-oHC"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1UN-L5-jZM">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SyZ-5F-32U" kind="relationship" relationship="rootViewController" id="Q5C-km-td1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUg-yT-Ryc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1260" y="1000"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

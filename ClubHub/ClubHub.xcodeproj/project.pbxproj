@@ -12,6 +12,7 @@
 		565788BEE9D44A32F3B0CB4E /* Pods_ClubHub_ClubHubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA2230759940521B720E9722 /* Pods_ClubHub_ClubHubUITests.framework */; };
 		90EF7E94FC6D2AE987C7CE81 /* Pods_ClubHubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2B0F4508CFAA9AE161EB98 /* Pods_ClubHubTests.framework */; };
 		B9C3D6FEAA3997A8FE00544A /* Pods_ClubHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF785DEE3DD267E76C59858 /* Pods_ClubHub.framework */; };
+		FC330E15291E993800DDC1C5 /* JoinedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC330E14291E993800DDC1C5 /* JoinedDetailViewController.swift */; };
 		FC7FBD93290980B6006070B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7FBD92290980B6006070B9 /* AppDelegate.swift */; };
 		FC7FBD95290980B6006070B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7FBD94290980B6006070B9 /* SceneDelegate.swift */; };
 		FC7FBD9A290980B6006070B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC7FBD98290980B6006070B9 /* Main.storyboard */; };
@@ -25,6 +26,8 @@
 		FC7FBDC7290B8663006070B9 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7FBDC6290B8663006070B9 /* ExploreViewController.swift */; };
 		FC7FBDC9290B8673006070B9 /* ClubCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7FBDC8290B8673006070B9 /* ClubCell.swift */; };
 		FC7FBDCB290B8685006070B9 /* AddClubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7FBDCA290B8685006070B9 /* AddClubViewController.swift */; };
+		FCDA684E291DBA9A00C93CBF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDA684D291DBA9A00C93CBF /* HomeViewController.swift */; };
+		FCDA6850291DBDF300C93CBF /* JoinedClubCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDA684F291DBDF300C93CBF /* JoinedClubCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,7 @@
 		AA05E97CF445971AC90535D1 /* Pods-ClubHubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClubHubTests.release.xcconfig"; path = "Target Support Files/Pods-ClubHubTests/Pods-ClubHubTests.release.xcconfig"; sourceTree = "<group>"; };
 		AA2230759940521B720E9722 /* Pods_ClubHub_ClubHubUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClubHub_ClubHubUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C66C2455B22A4A4461CBF547 /* Pods-ClubHub-ClubHubUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClubHub-ClubHubUITests.release.xcconfig"; path = "Target Support Files/Pods-ClubHub-ClubHubUITests/Pods-ClubHub-ClubHubUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FC330E14291E993800DDC1C5 /* JoinedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinedDetailViewController.swift; sourceTree = "<group>"; };
 		FC7FBD8F290980B6006070B9 /* ClubHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClubHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC7FBD92290980B6006070B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC7FBD94290980B6006070B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 		FC7FBDC6290B8663006070B9 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		FC7FBDC8290B8673006070B9 /* ClubCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubCell.swift; sourceTree = "<group>"; };
 		FC7FBDCA290B8685006070B9 /* AddClubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddClubViewController.swift; sourceTree = "<group>"; };
+		FCDA684D291DBA9A00C93CBF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FCDA684F291DBDF300C93CBF /* JoinedClubCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinedClubCell.swift; sourceTree = "<group>"; };
 		FD77588F8EC74DE93CA359B8 /* Pods-ClubHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClubHub.release.xcconfig"; path = "Target Support Files/Pods-ClubHub/Pods-ClubHub.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,6 +170,9 @@
 				2869F1D1290AFC00009B6240 /* DetailClubViewController.swift */,
 				FC7FBDC4290B44C2006070B9 /* SignUpViewController.swift */,
 				282886512915645C009732B1 /* ProfileViewController.swift */,
+				FCDA684D291DBA9A00C93CBF /* HomeViewController.swift */,
+				FCDA684F291DBDF300C93CBF /* JoinedClubCell.swift */,
+				FC330E14291E993800DDC1C5 /* JoinedDetailViewController.swift */,
 			);
 			path = ClubHub;
 			sourceTree = "<group>";
@@ -428,9 +437,12 @@
 				FC7FBDC5290B44C2006070B9 /* SignUpViewController.swift in Sources */,
 				FC7FBDC32909EFEB006070B9 /* LoginViewController.swift in Sources */,
 				FC7FBDC7290B8663006070B9 /* ExploreViewController.swift in Sources */,
+				FC330E15291E993800DDC1C5 /* JoinedDetailViewController.swift in Sources */,
 				FC7FBD93290980B6006070B9 /* AppDelegate.swift in Sources */,
+				FCDA684E291DBA9A00C93CBF /* HomeViewController.swift in Sources */,
 				2869F1D2290AFC00009B6240 /* DetailClubViewController.swift in Sources */,
 				282886522915645C009732B1 /* ProfileViewController.swift in Sources */,
+				FCDA6850291DBDF300C93CBF /* JoinedClubCell.swift in Sources */,
 				FC7FBDC9290B8673006070B9 /* ClubCell.swift in Sources */,
 				FC7FBD95290980B6006070B9 /* SceneDelegate.swift in Sources */,
 			);
